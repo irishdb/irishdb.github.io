@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jordan Reyes — Researcher</title>
+<meta name="description" content="Personal academic website of Jordan Reyes, researcher in [your field].">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="shell">
+  <!-- ===================== SIDEBAR ===================== -->
+  <aside class="sidebar">
+    <div>
+      <div class="id-block">
+        <p class="name">Jordan Reyes</p>
+        <p class="role">Postdoctoral Researcher</p>
+        <p class="affil">Dept. of [Your Field] · [University]</p>
+      </div>
+
+      <div class="nav-axis">
+        <div class="axis-rail">
+          <div class="axis-dot" id="axisDot"></div>
+        </div>
+        <ul class="nav-list" id="navList">
+          <li><a href="#bio" data-target="bio">Bio</a></li>
+          <li><a href="#teaching" data-target="teaching">Teaching</a></li>
+          <li><a href="#news" data-target="news">News</a></li>
+          <li><a href="#cv" data-target="cv">CV</a></li>
+          <li><a href="#contact" data-target="contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="sidebar-foot">
+      <div class="contact-links">
+        <a href="mailto:jordan.reyes@university.edu">Email</a>
+        <a href="#" class="placeholder-link" title="Add your Google Scholar URL">Scholar</a>
+        <a href="#" class="placeholder-link" title="Add your GitHub URL">GitHub</a>
+        <a href="#" class="placeholder-link" title="Add your ORCID URL">ORCID</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===================== MAIN ===================== -->
+  <main>
+
+    <!-- BIO -->
+    <section class="section" id="bio">
+      <p class="eyebrow">Bio</p>
+      <h2>About</h2>
+      <div class="bio">
+        <p class="bio-lede">I'm a researcher working on [one-sentence description of your research question or field — write it the way you'd explain it to a smart friend outside your field].</p>
+        <p>[Paragraph 1 — your background: where you did your PhD, your current position, and the broad arc of what you study. Keep it to 3–4 sentences.]</p>
+        <p class="muted">[Paragraph 2 — optional: what drew you to this area, or a line about your approach/methods that distinguishes your work.]</p>
+      </div>
+
+      <dl class="facts">
+        <dt>Position</dt><dd>Postdoctoral Researcher, [University]</dd>
+        <dt>PhD</dt><dd>[Field], [University], [Year]</dd>
+        <dt>Focus</dt><dd>[e.g. Computational biology, condensed matter, atmospheric science]</dd>
+        <dt>Based in</dt><dd>[City, Country]</dd>
+      </dl>
+    </section>
+
+    <div class="ruler"></div>
+
+    <!-- TEACHING -->
+    <section class="section" id="teaching">
+      <p class="eyebrow">Teaching</p>
+      <h2>Courses</h2>
+
+      <div class="course">
+        <span class="code">[XXX 101]</span>
+        <span class="title">[Course title]</span>
+        <span class="term">Spring [Year]</span>
+      </div>
+      <div class="course">
+        <span class="code">[XXX 240]</span>
+        <span class="title">[Course title]</span>
+        <span class="term">Fall [Year]</span>
+      </div>
+      <div class="course">
+        <span class="code">TA</span>
+        <span class="title">[Course you assisted with]</span>
+        <span class="term">[Year]</span>
+      </div>
+    </section>
+
+    <div class="ruler"></div>
+
+    <!-- NEWS -->
+    <section class="section" id="news">
+      <p class="eyebrow">News</p>
+      <h2>Updates</h2>
+
+      <div class="news-item">
+        <time>[Mon Year]</time>
+        <p>[e.g. Paper accepted at Conference/Journal Name.]</p>
+      </div>
+      <div class="news-item">
+        <time>[Mon Year]</time>
+        <p>[e.g. Gave a talk at Seminar/Workshop Name.]</p>
+      </div>
+      <div class="news-item">
+        <time>[Mon Year]</time>
+        <p>[e.g. Started as a postdoc at University Name.]</p>
+      </div>
+    </section>
+
+    <div class="ruler"></div>
+
+    <!-- CV -->
+    <section class="section" id="cv">
+      <p class="eyebrow">CV</p>
+      <h2>Curriculum Vitae</h2>
+
+      <a class="cv-download" href="cv.pdf" download>↓ Download full CV (PDF)</a>
+
+      <div class="timeline">
+        <div class="tl-item">
+          <span class="yr">[Year]–present</span>
+          <div class="what"><strong>Postdoctoral Researcher</strong><span>[University], [Department]</span></div>
+        </div>
+        <div class="tl-item">
+          <span class="yr">[Year]–[Year]</span>
+          <div class="what"><strong>PhD, [Field]</strong><span>[University]</span></div>
+        </div>
+        <div class="tl-item">
+          <span class="yr">[Year]–[Year]</span>
+          <div class="what"><strong>BSc/MSc, [Field]</strong><span>[University]</span></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="ruler"></div>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <p class="eyebrow">Contact</p>
+      <h2>Get in touch</h2>
+
+      <dl class="contact-grid">
+        <dt>Email</dt><dd><a href="mailto:jordan.reyes@university.edu">jordan.reyes@university.edu</a></dd>
+        <dt>Office</dt><dd>[Building, Room], [University], [City]</dd>
+        <dt>Scholar</dt><dd><a href="#" class="placeholder-link" title="Add your Google Scholar URL">Google Scholar profile →</a></dd>
+        <dt>GitHub</dt><dd><a href="#" class="placeholder-link" title="Add your GitHub URL">github.com/yourhandle →</a></dd>
+      </dl>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Jordan Reyes. Built by hand, not a template. Last updated [Month Year].
+    </footer>
+
+  </main>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
