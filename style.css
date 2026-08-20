@@ -265,21 +265,109 @@ main{ min-width: 0; }
 }
 
 /* ---------- News ---------- */
-.news-item{
-  display: grid;
-  grid-template-columns: 96px 1fr;
-  gap: 16px;
-  padding: 18px 0;
+/* ---------- Blog teasers (homepage) ---------- */
+.post-teaser{
+  display: block;
+  padding: 20px 0;
   border-top: 1px solid var(--rule);
+  text-decoration: none;
+  color: inherit;
 }
-.news-item:first-of-type{ border-top: none; padding-top: 0; }
-.news-item time{
+.post-teaser:first-of-type{ border-top: none; padding-top: 0; }
+
+.post-teaser time{
+  display: block;
   font-family: var(--mono);
   font-size: 0.72rem;
   color: var(--ink-faint);
-  padding-top: 3px;
+  margin-bottom: 6px;
 }
-.news-item p{ margin: 0; }
+
+.post-teaser h3{
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0 0 6px;
+  transition: color 0.2s ease;
+}
+.post-teaser:hover h3{ color: var(--accent); }
+
+.post-teaser p{
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+}
+
+.view-all{
+  display: inline-block;
+  margin-top: 20px;
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.view-all:hover{ border-color: var(--accent); }
+
+/* ---------- Blog subpages (blog/*.html) ---------- */
+.blog-header{
+  max-width: var(--max);
+  padding: 40px 40px 0;
+}
+.blog-header a{
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  text-decoration: none;
+}
+.blog-header a:hover{ color: var(--accent); }
+
+.blog-main{
+  max-width: var(--max);
+  padding: 40px 40px 96px;
+}
+
+.blog-post-title{
+  font-family: var(--serif);
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 8px 0 32px;
+}
+
+.blog-post-body p{
+  margin: 0 0 18px;
+  color: var(--ink);
+}
+
+.post-list{
+  display: flex;
+  flex-direction: column;
+}
+.post-list-item{
+  display: block;
+  padding: 24px 0;
+  border-top: 1px solid var(--rule);
+  text-decoration: none;
+  color: inherit;
+}
+.post-list-item:first-of-type{ border-top: none; padding-top: 0; }
+.post-list-item time{
+  display: block;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--ink-faint);
+  margin-bottom: 8px;
+}
+.post-list-item h2{
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 8px;
+  transition: color 0.2s ease;
+}
+.post-list-item:hover h2{ color: var(--accent); }
+.post-list-item p{ margin: 0; color: var(--ink-soft); }
 
 /* ---------- CV ---------- */
 .cv-download{
