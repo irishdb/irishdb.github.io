@@ -52,6 +52,15 @@ a{ color: inherit; }
   justify-content: space-between;
   border-right: 1px solid var(--rule);
 }
+.id-block .portrait{
+  display: block;
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 18px;
+  border: 1px solid var(--rule);
+}
 
 .id-block .name{
   font-family: var(--serif);
