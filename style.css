@@ -13,6 +13,32 @@
   --max: 720px;
 }
 
+[data-theme="dark"]{
+  --bg: #16181A;
+  --bg-alt: #1D2022;
+  --ink: #F2F1EE;
+  --ink-soft: #ADB2B8;
+  --ink-faint: #767C82;
+  --rule: #2A2D30;
+  --accent: #6FA3E0;
+  --accent-2: #6FBE9B;
+}
+.theme-toggle{
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+  background: none;
+  border: 1px solid var(--rule);
+  padding: 6px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+.theme-toggle:hover{ border-color: var(--accent); color: var(--accent); }
+
 *{ box-sizing: border-box; }
 html{ scroll-behavior: smooth; }
 @media (prefers-reduced-motion: reduce){
