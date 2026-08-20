@@ -38,3 +38,13 @@ window.addEventListener('resize', () => {
   const activeLink = document.querySelector('.nav-list a.active') || navLinks[0];
   positionDot(navLinks.indexOf(activeLink));
 });
+
+function updateClock(){
+  var el = document.getElementById('localTime');
+  if(!el) return;
+  var now = new Date();
+  var time = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+  el.textContent = time + ' (your local time)';
+}
+updateClock();
+setInterval(updateClock, 1000 * 30);
