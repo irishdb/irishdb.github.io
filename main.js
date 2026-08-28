@@ -16,9 +16,6 @@ function positionDot(activeIndex){
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
-    if(entry.isIntersecting){
-      entry.target.classList.add('in-view');
-    }
     if(entry.isIntersecting && entry.intersectionRatio > 0.3){
       const id = entry.target.id;
       navLinks.forEach(l => l.classList.remove('active'));
