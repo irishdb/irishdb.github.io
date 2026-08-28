@@ -455,14 +455,6 @@ footer{
   color: var(--ink-faint);
 }
 
-/* fade-in on view */
-.section{
-  opacity: 0;
-  transform: translateY(8px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-.section.in-view{ opacity: 1; transform: translateY(0); }
-
 /* ---------- Mobile ---------- */
 @media (max-width: 860px){
   .shell{ display: block; }
